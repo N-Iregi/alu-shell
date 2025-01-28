@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u *.html "$(dirname "$(PWD)")"
+cp -u *.html "$(dirname "$PWD")"
