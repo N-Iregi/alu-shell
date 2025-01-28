@@ -1,11 +1,2 @@
 #!/bin/bash
-
-parent_directory=$(dirname "$PWD")
-
-for file in *.html; do
-
-	if [! -e "$parent_directory/$file"] || ["$file" -nt "$parent_directory/$file"]; then
-	cp "$file" "$parent_directory/$file"
-
-	fi
-done
+cp -u *.html "$(dirname "$(PWD)")"
