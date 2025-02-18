@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -execdir echo {} \; -o -type d -empty -execdir echo {} \;
+find . -type f -empty -print -o -type d -empty -print
