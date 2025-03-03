@@ -10,7 +10,7 @@ case $1 in
 	
 	stop)
 		kill "$(cat /var/run/my_process.pid)" && rm -rf /var/run/my_process.pid
-		echo "manage my process stopped"
+		echo "manage_my_process stopped"
 		;;
 
 	restart)
